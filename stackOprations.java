@@ -47,7 +47,7 @@ class stackOprations{
     }
   }
  
- 
+   // Push Opration
    public static int push(){
      if(isFull() == false){
        System.out.println("Stack is Full");
@@ -64,6 +64,7 @@ class stackOprations{
  
    }
  
+   // POP Opration
    public static int pop(){
      if(isEmpty() == false){
        System.out.println("Stack is Empty");
@@ -76,6 +77,7 @@ class stackOprations{
        }
    }
  
+   // PIP Opration
    public static void pip(){
      int temp=0;
      for(int i = top; i>=0; i--){
@@ -92,6 +94,7 @@ class stackOprations{
      System.out.println(top+1);
    }
  
+   // Stack Empty
    public static boolean isEmpty(){
      if(top == -1){
        return false;
@@ -99,7 +102,7 @@ class stackOprations{
        return true;
      } 
    }
- 
+   // Stack Full
    public static boolean isFull(){
      if(top == max-1){
        return false;
